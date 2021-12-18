@@ -1,0 +1,55 @@
+﻿<Window x:Class="WpfAppTask.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppTask"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        WindowStartupLocation="CenterScreen" 
+        Height="610" 
+        Width="800">
+    <Grid>
+        <Label
+            Content="Category"
+            Height="50"
+            Width="110"
+            FontSize="25"
+            Margin="0,0,660,520">
+            
+        </Label>
+        <DataGrid
+            Height="520"
+            Width="320"
+            Name="datagrid_category"
+            Margin="0,50,450,0">
+
+        </DataGrid>
+        <Label
+            Content="Product"
+            Height="50"
+            Width="110"
+            FontSize="25"
+            Margin="240,0,0,510">
+
+        </Label>
+        <DataGrid
+            Height="520"
+            Width="320"
+            Margin="450,50,0,0"
+            Name="datagrid_product"
+            />
+        <Button
+            Height="60"
+            Width="120"
+            Name="btn_products" 
+            Content="⇒"
+            
+            FontSize="40"
+            
+            Click="btn_products_Click">
+            
+        </Button>
+    </Grid>
+    
+</Window>
